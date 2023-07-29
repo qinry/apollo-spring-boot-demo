@@ -16,6 +16,9 @@ configurations {
     compileOnly {
         extendsFrom(configurations.annotationProcessor.get())
     }
+    testCompileOnly {
+        extendsFrom(configurations.testAnnotationProcessor.get())
+    }
 }
 
 repositories {
@@ -36,6 +39,7 @@ dependencies {
     compileOnly("org.projectlombok:lombok")
     runtimeOnly("mysql:mysql-connector-java:5.1.34")
     annotationProcessor("org.projectlombok:lombok")
+    testAnnotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.mybatis.spring.boot:mybatis-spring-boot-starter-test:2.3.1")
 }

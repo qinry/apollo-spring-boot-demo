@@ -3,7 +3,6 @@ package demo.controller;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
 import demo.config.TestBean;
 import demo.model.Customer;
 import demo.service.CustomerService;
